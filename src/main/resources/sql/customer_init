@@ -1,0 +1,3 @@
+TRUNCATE customer;#清空table
+# INSERT INTO customer(name, contact, telephone, email, remark) VALUES ('customer3','jac','15033555258','jack@gmail.com',NULL );
+# INSERT INTO customer(name, contact, telephone, email, remark) VALUES ('customer4','Ros','12345678910','rose@mail.com',NULL );
