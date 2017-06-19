@@ -39,16 +39,18 @@ public final class CastUtil {
         return doubleValue;
     }
 
-    public static double castLong(Object obj){
+    public static long castLong(Object obj){
         return CastUtil.castLong(obj,0);
     }
 
-    public static double castLong(Object obj,long defaultValue){
+    public static long castLong(Object obj,long defaultValue){
         long longValue=defaultValue;
         if(obj!=null){
+            //把对象转化为String
             String strValue=castString(obj);
             if(StringUtils.isNotEmpty(strValue)){
                 try{
+                    //然后再把String转化为long型
                     longValue=Long.parseLong(strValue);
 
                 }catch (NumberFormatException e){

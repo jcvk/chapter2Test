@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * Created by lenovo on 2017/6/19.
  */
-public final class locHelper {
+public final class IocHelper {
 
     //只需要在locHelper的静态快中实现相关逻辑，就能完成IoC容器的初始化
     //工作。
