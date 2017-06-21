@@ -11,6 +11,11 @@ import java.lang.reflect.Method;
 public final class ReflectionUtil {
     private static final Logger LOGGER = Logger.getLogger(ReflectionUtil.class);
 
+    /**
+     * 将每一个Class的到一个Object对象
+     * @param cls
+     * @return
+     */
     public static Object newInstance(Class<?> cls){
         Object instance;
         try {

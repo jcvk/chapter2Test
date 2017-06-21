@@ -40,6 +40,11 @@ public final class ClassHelper {
         return classSet;
     }
 
+    /**
+     * 获取应用包名下所有Controller类
+     * 把用户请求的数据经过业务处理层之后封装成一个Model
+     * @return 一个集合
+     */
     public static Set<Class<?>> getControllerClassSet(){
         Set<Class<?>> classSet=new HashSet<Class<?>>();
         for (Class<?> cls:CLASS_SET){
@@ -50,6 +55,10 @@ public final class ClassHelper {
         return classSet;
     }
 
+    /**
+     * 将所有的类都放入beanClassSet中
+     * @return
+     */
     public static Set<Class<?>> getBeamClassSet(){
         Set<Class<?>> beanClassSet=new HashSet<Class<?>>();
         beanClassSet.addAll(getServiceClassSet());
